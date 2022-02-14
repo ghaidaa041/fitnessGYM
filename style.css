@@ -61,7 +61,6 @@ body{
 .center2{
     background-color: white;
     position: relative;
-    padding:0 20%;
 }
 
 .center3{
@@ -86,7 +85,6 @@ body{
 
 
 .layer{
-
     text-align: center;
     background-color: rgba(0, 0, 0, 0.692);
     border-radius: 30px;
@@ -97,6 +95,9 @@ body{
 .roww{
     display: grid;
     grid-template-columns: repeat(3, auto);
+    
+    margin: 0 6rem;
+    text-align: center;
 }
 
 .cardd{
@@ -164,21 +165,57 @@ nav{
       padding: 2rem;
   }
 
+
+
+
   @media (max-width: 900px){
     .roww{
         display: grid;
-        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(2, auto);
+        margin: 0 4rem;
+        text-align: center;
     }
 
-    .center2{
-        background-color: white;
+    
+
+    .center3{
+        height: 50vh;
+    }
+
+    .btn1 {
+        font-size: 4vw;
+      }
+
+      .center4{
+          width: 90%;
+      }
+
+      .text{
+        padding-top: 40%;
+        margin: auto;
+        z-index: 10;
+    }
+
+    .center5{
         position: relative;
-        padding:0 30%;
+        padding:0 10%;
+    
+    }
+
+}
+
+
+@media (max-width: 720px){
+    .roww{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        margin: 0 4rem;
+        text-align: center;
     }
 
 
     .center3{
-        height: 50vh;
+        height: 55vh;
     }
 
     .btn1 {
